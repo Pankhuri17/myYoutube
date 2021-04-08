@@ -1,0 +1,23 @@
+// .test{
+//     height: 100vh;
+    
+    // .login_form{
+    //     height: 100vh;
+    // }
+    .container{
+        margin-top: 30px;
+        height: 100vh;
+        margin: 10px 10%;
+        .imageContainer{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .img{
+                margin: 10px;
+            }
+        }
+        .video{
+            cursor: pointer;
+        }
+    }
+// }

@@ -1,0 +1,47 @@
+<!-- <div class="container submit">
+  <div class="d-flex justify-content-center align-items-center submit_form">
+    <div class="card p-5">
+      <div>
+        <label for="">Author</label>
+        <input class="form-control" type="text" [(ngModel)]="Author" />
+      </div>
+      <div class="mt-3">
+        <label for="">Timestamp</label>
+        <input class="form-control" type="date" [(ngModel)]="Timestamp" />
+      </div>
+      <div class="mt-3">
+        <label for="">Note</label>
+        <input class="form-control" type="text" [(ngModel)]="Note" />
+      </div>
+      <div class="mt-3">
+        <label for="">TicketId</label>
+        <input class="form-control" type="number" [(ngModel)]="TicketId" />
+      </div>
+      <div class="mt-3">
+        <label for="">Attachment</label>
+        <input type="file" id="upload" class="form-control"  (change)="fileUpload($event)" multiple  />
+      </div>
+      <button class="btn btn-success mt-3" *ngIf="saveBtn" (click)="submit(Author, Timestamp, Note, TicketId, attachment)">submit</button>
+      <button class="btn btn-success mt-3" *ngIf="editBtn" (click)="submit(Author, Timestamp, Note, TicketId, attachment)">submit</button>
+    </div>
+  </div>
+</div>
+
+<app-child [tableData]="tableRes" (editTableData)="editData($event)"></app-child> -->
+
+
+<!-- <div *ngFor="let item of imgData">
+  <img src="{{item?.src.medium}}" />
+</div> -->
+
+<div class="container">
+  <div>
+    <input class="form-control" type="text" [(ngModel)]="searchData" />
+    <button class="btn btn-success mt-3" (click)="submit(searchData)">submit</button>
+    <div class="imageContainer">
+      <div *ngFor="let item of imgType" class="img">
+        <img src="{{item.snippet.thumbnails.medium.url}}" class="video" [routerLink]="['/video']" [queryParams]="{id:item.id.videoId}"/>
+      </div>
+    </div>
+  </div>
+</div>
